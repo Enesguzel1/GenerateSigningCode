@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/CreateCodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kod Üret"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="#000000"
+        />
+
+    <TextView
+        android:id="@+id/CodeText"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Giriş Kodunuz: "
+        android:layout_below="@+id/CreateCodeButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/CodeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@+id/CodeText"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Kodu Giriniz"
+        />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:layout_below="@+id/CodeEditText"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#000000"
+        />
+    <TextView
+        android:id="@+id/timeLeftText"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Kalan Zaman: 10sn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>
